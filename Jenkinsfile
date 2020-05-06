@@ -1,5 +1,7 @@
 node
 {
+   
+   echo "Jenkins Node name ${env.NODE_NAME}"
 def mavenHome = tool name:'maven3.6.3'
 stage('CheckoutCode')
 {
